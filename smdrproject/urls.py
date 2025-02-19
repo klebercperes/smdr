@@ -10,5 +10,6 @@ urlpatterns = [
     path('accounts/logout/', accounts_views.logout_view, name='logout'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('upload/', files_views.upload_file, name='upload_file'),
+    path('upload_customers_csv/', files_views.upload_customers_csv, name='upload_customers_csv'),
     path('', files_views.dashboard, name='dashboard'),
 ]
