@@ -38,7 +38,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',  # Added as required
 ]
+
+# Update this setting to use a list
+ACCOUNT_LOGIN_METHODS = ['username']  # Corrected to use a list
+
+SITE_ID = 1
 
 ROOT_URLCONF = 'smdrproject.urls'
 
