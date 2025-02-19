@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from accounts import views as accounts_views
+from files import views as files_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -8,4 +9,6 @@ urlpatterns = [
     path('accounts/signup/', accounts_views.signup_view, name='signup'),
     path('accounts/logout/', accounts_views.logout_view, name='logout'),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('upload/', files_views.upload_file, name='upload_file'),
+    path('', files_views.dashboard, name='dashboard'),
 ]
