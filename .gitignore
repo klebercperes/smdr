@@ -1,6 +1,13 @@
 ```
 # Ignore all files
-
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+*.venv
+*.DS_Store
+.env
 
 # Allow .gitignore file
 !.gitignore
