@@ -2,15 +2,15 @@
 .DS_Store
 
 # Python related files
-*.pyc
-__pycache__/
-env/
-venv/
-.myenv/
+# *.pyc
+# __pycache__/
+# env/
+# venv/
+# .myenv/
 
 # Django specific files
-db.sqlite3
-media/
+# db.sqlite3
+# media/
 
 # VS Code settings
 .vscode/
