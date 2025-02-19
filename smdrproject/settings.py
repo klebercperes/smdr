@@ -40,11 +40,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-<<<<<<< HEAD
     'allauth.account.middleware.AccountMiddleware', 
-=======
     'allauth.account.middleware.AccountMiddleware',  # Added as required
->>>>>>> f479f791fed136d885d6dca866882a3a9a0a6569
 ]
 
 # Update this setting to use a list
