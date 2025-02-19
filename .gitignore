@@ -1,16 +1,7 @@
-# Ignore macOS system files
-.DS_Store
+```
+# Ignore all files
+*
 
-# Python related files
-# *.pyc
-# __pycache__/
-# env/
-# venv/
-# .myenv/
-
-# Django specific files
-# db.sqlite3
-# media/
-
-# VS Code settings
-.vscode/
+# Allow .gitignore file
+!.gitignore
+```
