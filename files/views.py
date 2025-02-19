@@ -16,6 +16,13 @@ def upload_file(request):
         })
     return render(request, 'upload.html')
 
+def view_uploaded_file(request, filename):
+    file_path = FileSystemStorage().path(filename)
+    with open(file_path, newline='') as csvfile:
+        reader = csv.reader(csvfile)
+        data = [row for row in reader]
+    return render(request, 'view_uploaded_file.html', {'data': data})
+
 def dashboard(request):
     return render(request, 'dashboard.html')
 
