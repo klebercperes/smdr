@@ -12,3 +12,4 @@ __pycache__/
 # Allow .gitignore file
 !.gitignore
 ```__pycache__/
+__pycache__/
