@@ -12,3 +12,6 @@ def upload_file(request):
             'uploaded_file_url': uploaded_file_url
         })
     return render(request, 'upload.html')
+
+def dashboard(request):
+    return render(request, 'dashboard.html')
